@@ -1,0 +1,12 @@
+
+@import "../../../more-or-less-viz/more-or-less-viz.component.scss";
+
+#finalWrapper {
+  display: flex; 
+  flex-direction: column; 
+}
+
+#score {
+  font-size: 10vh;
+  text-align: center;
+}

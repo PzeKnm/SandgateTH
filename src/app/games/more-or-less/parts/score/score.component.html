@@ -1,0 +1,25 @@
+
+
+<div style="display: flex; flex-direction: row;" >
+
+  <div>Score: </div>
+
+  <div class="placeoverWrapper">
+
+    <div id="scoreValue" >{{currentScore}}</div>
+    <div id="placeover"  [@myAnimationtrigger]="myAnimationStep"
+        (@myAnimationtrigger.done)="myAnimationDone($event)" >
+      <div id="scoreValue" >{{oldScore}}</div>  
+    </div>   
+
+  </div>
+
+</div>
+
+
+
+
+
+
+ 
+

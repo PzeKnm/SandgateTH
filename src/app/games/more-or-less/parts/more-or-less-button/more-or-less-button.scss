@@ -1,0 +1,28 @@
+
+
+@import '../../more-or-less.scss';
+
+.slider {
+  stroke: $range-selector-slider-stroke-color; 
+  fill: $range-selector-slider-fill-color;
+}
+
+
+
+/*
+#buttonWrapper {
+  display: flex; 
+  flex-direction: row;
+  place-content: space-evenly;
+}
+
+
+.moreOrLessButton {
+  width: 20vw;
+  height: 20vw;
+  font-size: 8vh;
+  margin: 1vw;
+  border-radius: 1vw;
+  border: 3px solid $labelBorderCol; 
+}
+*/

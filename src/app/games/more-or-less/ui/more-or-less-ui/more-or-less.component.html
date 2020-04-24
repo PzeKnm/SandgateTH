@@ -1,0 +1,29 @@
+
+<div id="moreOrLessGameUI">
+
+  <div id="scoreWrapper">
+    <div>Score: </div>
+    <div id="scoreValue" >{{score}}</div>    
+  </div>   
+
+  <div id="buttonWrapper"  >
+    <app-more-or-less-button type="DecLo" (command)="doCommand('DecLo')" ></app-more-or-less-button>        
+    <app-more-or-less-button type="IncLo" (command)="doCommand('IncLo')" ></app-more-or-less-button>
+    <div style="margin:1vw"  > </div>
+    <app-more-or-less-button type="DecHi" (command)="doCommand('DecHi')" ></app-more-or-less-button>  
+    <app-more-or-less-button type="IncHi" (command)="doCommand('IncHi')" ></app-more-or-less-button>
+  </div>  
+
+  <div id="answerWrapper">
+    <button id="answerButton" (click)="doCommand('AcceptAnswer')">Answer</button> 
+  </div>
+
+
+
+</div>
+
+
+
+
+
+

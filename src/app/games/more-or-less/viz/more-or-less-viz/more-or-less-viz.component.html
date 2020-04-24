@@ -1,0 +1,38 @@
+
+<div *ngIf="(isConnected === true); else elseBlock">
+
+  <div *ngIf="isActivePage('Initialised') || isActivePage('Activated') || isActivePage('Online')">
+    <app-intro-page></app-intro-page>
+  </div>
+
+  <div *ngIf="isActivePage('Authenticating')">
+    <app-authentication-page [vizData]="vizData"   ></app-authentication-page>
+  </div>
+
+  <div *ngIf="isActivePage('PreGame')">
+    <app-pregame-page></app-pregame-page>
+  </div>
+
+  <div *ngIf="isActivePage('GamePlaying')">
+    <app-playing-page [vizData]="vizData"></app-playing-page>
+  </div>
+
+  <div *ngIf="isActivePage('PostGame')">
+    <app-final-page [vizData]="vizData"></app-final-page>
+  </div>
+
+</div>
+
+<ng-template #elseBlock><p>
+  There doesn't appear to be a connection to the game....
+</p></ng-template>
+
+<p class="dev">Build timestamp: {{getBuildTimeStamp()}}</p>
+
+<div class="dev">
+  {{vizData | json}}
+</div>
+
+
+
+

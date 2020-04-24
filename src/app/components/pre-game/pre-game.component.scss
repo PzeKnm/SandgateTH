@@ -1,0 +1,13 @@
+
+
+$labelHighlightBorderCol: rgb(224,27,34);
+
+
+#startButton {
+  width: 100%;  
+  height: 40vw;
+  border-radius: 1vw;
+  border: 3px solid $labelHighlightBorderCol;
+  font-size: 8vh;
+}
+

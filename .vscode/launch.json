@@ -1,0 +1,29 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+
+
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:4200/AccessCode/141e3cd9-0002-4079-bc1e-5a8aa213098b",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "MoLViz Launch Chrome ",
+      "url": "http://localhost:4200/Viz/MoreOrLess",
+      "webRoot": "${workspaceFolder}"
+    },   
+  ]
+}
+
+
+
+
+

@@ -1,0 +1,29 @@
+
+<div ngClass="container" >
+
+  <app-header></app-header>
+  <alert></alert>
+  
+  <!--Content-->
+  <div style="font-size: 3vh;"> The following games are available: </div>
+
+  <ng-container  *ngFor="let g of games">
+      <app-game-summary 
+        [gameSummary]="g">
+      </app-game-summary  >
+  </ng-container>
+
+  
+  <app-footer></app-footer>
+  
+</div>
+  
+  
+  
+
+
+
+
+
+
+

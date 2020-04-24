@@ -1,0 +1,63 @@
+
+@import "../../more-or-less.scss";
+
+#moreOrLessGameUI {
+ // background-color: $backgroundCol;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#scoreWrapper {
+  
+  display: flex;  
+  flex-direction: row;
+  place-content: space-evenly;
+  width:90vw;  
+}
+
+#scoreValue {
+  width:20vw; 
+  background-color: $score-background-color;
+  border-radius: 1vw;
+  border: 3px solid $score-border-color;
+}
+
+#buttonWrapper {
+  margin-top: 10vh;
+  display: flex; 
+  flex-direction: row;
+  position:relative; 
+  width:90vw; 
+  height:10vh
+}
+
+#answerWrapper {
+  margin-top: 10vh;
+  display: flex;  
+  flex-direction: row;
+  place-content: space-evenly;
+  width:90vw; 
+}
+
+#answerButton {
+  width: 100%;
+  height: 20vw;
+  font-size: 5vh; 
+  border-radius: 1vw;
+ // border: 3px solid $labelHighlightBorderCol;
+}
+
+
+/*
+.moreOrLessButton {
+  width: 20vw;
+  height: 20vw;
+  font-size: 8vh;
+  margin: 1vw;
+  border-radius: 1vw;
+  border: 3px solid $labelBorderCol; 
+}
+
+*/ 

@@ -1,0 +1,20 @@
+
+
+<!--  -->
+<div ngClass="divQuestion"  
+    [@questionChanged]="questionStatus"
+    (@questionChanged.done)="animationDone($event)" >
+ 
+  <app-frame-text  vbHeight="30" vbWidth="20" 
+    radius="1"  strokeWidth="0.6" strokeColour="#000" fillColour="#eee" >
+   
+      <div class="questionText" 
+        style=" display: flex; justify-content: center; align-items: center;"
+        [style.height]="requiredHeight"   > 
+        {{displayedText}} 
+      </div>     
+
+  </app-frame-text>
+
+</div> 
+

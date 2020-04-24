@@ -1,0 +1,39 @@
+
+<!--  
+{{vizData | json}}
+ -->
+
+<div style="display: flex; flex-direction: column;" >
+
+  <!--  <button (click)="incScore()"  >Inc score</button>-->
+  <app-score [score]="vizData.score" style="margin:auto" >
+  </app-score>
+
+  <!--
+  <button (click)="changeQuestion()"  >change Q</button>-->
+
+  <app-question requiredHeight="15vh" style="font-size: 3vw; width:80%; height: 15vh; margin:auto" [question]="vizData.currentQuestion.questionText"   >
+  </app-question>
+
+
+  <app-answer-hint [min]="vizData.currentQuestionMin"
+                  [max]="vizData.currentQuestionMax" ></app-answer-hint>
+
+  <app-range-selector [min]="vizData.currentQuestionMin"
+                      [max]="vizData.currentQuestionMax"
+                      [lo]="vizData.currentAnswerLo"
+                      [hi]="vizData.currentAnswerHi" 
+                      [answer]="vizData.currentQuestion.answer" 
+                      [showAnswer]="vizData.internalState === 'DisplayAnswer'"
+                      [potentialScore]="vizData.potentialScore" >
+  </app-range-selector>
+
+  <div style="height: 5vh">
+    <app-countdown  [totalSecs]="vizData.totalGameSecs" 
+                    [remainingSecs]="vizData.remainingSecs" 
+                    [remainingQuestionSecs]="vizData.remainingQuestionSecs"  >
+    </app-countdown>    
+  </div>
+
+
+</div>

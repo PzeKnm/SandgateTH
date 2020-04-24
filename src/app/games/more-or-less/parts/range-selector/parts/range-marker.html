@@ -1,0 +1,37 @@
+
+
+ <svg>
+
+  <defs>
+    <!-- 
+    <radialGradient id="Shiny"
+      cx="0.5" cy="0.5" r="0.5" fx="0.25" fy="0.25">
+
+     <stop class="gradient_1" offset="0%"/>
+     <stop class="gradient_2" offset="50%"/>  
+     <stop class="gradient_3" offset="75%"/>
+     <stop class="gradient_4" offset="100%"/>  
+
+    </radialGradient>
+ -->
+   </defs>
+ 
+  <!--  
+  <circle  [attr.cx.] ="getXPos()" [attr.cy.]="getYPos()" fill="url(#Shiny)"  r="4"  />
+  -->
+  <g #marker range-marker-symbol [x]="getXPos()" [y]="getYPos()" [radius]="4" />
+  
+  <line class="label" [attr.x1.]="getXPos()" y1="10" 
+      [attr.x2.]="getXPos()"  [attr.y2.]="getFlagYPos()" />
+  <rect class="label" 
+    [attr.x.]="getFlagXPos()" [attr.y.]="getFlagYPos()" 
+    [attr.width.]="getFlagWidth()"  [attr.height.]="getFlagHeight()"    />
+
+  <text [attr.x.]="getTextXPos()"  [attr.y.]="getTextYPos()"  
+    text-anchor="middle" alignment-baseline="central" 
+    class="hiloLabel" >{{value}}</text>
+</svg>
+
+
+
+

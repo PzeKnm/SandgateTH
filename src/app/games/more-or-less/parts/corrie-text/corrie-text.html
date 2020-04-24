@@ -1,0 +1,21 @@
+
+      <div [ngStyle]="getStyle()"  >
+
+ 
+        <svg width="100%" height="100%"  [attr.viewBox.]="getViewbox()" >
+          
+          <path  [attr.d.]="getPath()"
+                [attr.stroke-width.]="strokeWidth"
+                [attr.stroke.]="getStrokeColour()"
+                [attr.fill.]="getFillColour()"
+          />    
+
+          <text [attr.x.]="getTextX()"  [attr.y.]="getTextY()"  
+            text-anchor="middle" 
+            alignment-baseline="central" >
+            {{text}}
+          </text>
+        </svg>
+
+
+      </div>

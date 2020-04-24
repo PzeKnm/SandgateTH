@@ -1,0 +1,16 @@
+
+
+@import "../../../more-or-less.scss";
+
+
+.minmaxFlag {
+  stroke: $range-selector-minmax-stroke-color;
+  stroke-width: 0.3;
+  fill: $range-selector-minmax-fill-color;
+}
+
+.minmaxText {
+  stroke: $range-selector-minmax-stroke-color;
+  font: 0.30vh sans-serif; 
+  stroke-width: 0.2;
+}

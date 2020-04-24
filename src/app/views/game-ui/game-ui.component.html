@@ -1,0 +1,56 @@
+
+
+<div style="height:100vh; display:flex; flex-direction: column;">
+  <div style="height:15vh">
+    <div id="more-or-lessBanner"  >
+      <img id="more-or-lessBannerImg" src="{{getBannerImage()}}" alt='image'
+          style="height:100%; width: 100%">
+    </div>
+  </div>
+  <div style="height:80vh; background-color: rgb(130, 164, 238); display: flex; flex-direction: column; align-items: center;">
+    
+    <div *ngIf="gameState === 'PreGame'"   >
+      <app-pre-game  (command)="sendCommandToStation($event)"></app-pre-game>
+    </div>
+    
+    <div *ngIf="gameState === 'Playing'">
+      <div  *ngIf="getStationID() === 'Station001'">
+    
+        <div class="container" fxLayout="row" fxLayoutGap="15px">
+          <button [disabled]="started" fxFlex fxFlexAlign="start" class="mat-raised-button" 
+            (click)="sendCommandToStation('Left')">Left</button>
+          <button [disabled]="started" fxFlex fxFlexAlign="start" class="mat-raised-button mat-primary" 
+            (click)="sendCommandToStation('Right')">Right</button>
+        </div>  
+      </div>
+      
+      <div  *ngIf="getStationID() === 'Station002'">
+        <app-more-or-less 
+          (command)="sendCommandToStation($event)" 
+          [score]="score"   >
+        </app-more-or-less>
+      </div>
+    </div>
+    
+    <div *ngIf="gameState === 'GameOver'"   >
+      <app-game-over
+        [score]="score"    >
+      </app-game-over> 
+    </div>
+      
+  </div>  
+   
+ 
+  <div style="height:5vh; background-color: rgb(88, 209, 77);">
+    <div>
+      Footer
+    </div>    
+  </div>
+
+</div>
+
+
+
+
+
+

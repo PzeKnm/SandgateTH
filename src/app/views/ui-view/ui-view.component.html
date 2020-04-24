@@ -1,0 +1,180 @@
+
+
+<div ngClass="container" >
+
+  <app-header></app-header>
+  <alert></alert>
+  
+  <!--Content-->
+  
+  
+
+
+<p ngClass="text"  >
+  A convenient place to test the UI styling:
+</p>
+
+<hr>
+
+
+
+<app-home>
+  
+</app-home>
+
+
+
+<app-more-or-less> 
+</app-more-or-less>
+
+<hr>
+
+<app-numpad 
+    [autoEnterLength]="4"
+    (textEntered)="onCodeEntered($event)">
+</app-numpad>
+
+
+<!--   // GameNotOnline, GameBusy, GenerateCode, EnterCode, 
+  NoCodeGenerated, CheckingCode, WrongCode, TimedOut
+   -->
+<br>
+
+
+<!-- -->
+<app-access-code-login
+  pageState="GenerateCode">
+</app-access-code-login>
+
+<br>
+
+<app-access-code-login
+  pageState="GameNotOnline">
+</app-access-code-login>
+
+<br>
+
+<app-access-code-login
+  pageState="GameBusy">
+</app-access-code-login>
+ 
+<br>
+
+<app-access-code-login
+  pageState="EnterCode">
+</app-access-code-login>
+
+<hr>
+
+60/60 - 15
+<div style="height: 5vh; width:100%">
+  <app-countdown  [totalSecs]="60" 
+                  [remainingSecs]="60" 
+                  [remainingQuestionSecs]="15"  >
+  </app-countdown>    
+</div>
+
+<br>
+
+59/60 - 15
+<div style="height: 5vh; width:100%">
+  <app-countdown  [totalSecs]="60" 
+                  [remainingSecs]="59" 
+                  [remainingQuestionSecs]="0"  >
+  </app-countdown>    
+</div>
+
+<br>
+
+50/100 - 25
+<div style="height: 5vh; width:100%">
+  <app-countdown  [totalSecs]="100" 
+                  [remainingSecs]="50" 
+                  [remainingQuestionSecs]="25"  >
+  </app-countdown>    
+</div>
+
+<br>
+
+1/100 - 25
+<div style="height: 5vh; width:100%">
+  <app-countdown  [totalSecs]="100" 
+                  [remainingSecs]="1" 
+                  [remainingQuestionSecs]="0"  >
+  </app-countdown>    
+</div>
+
+<br>
+
+0/100 - 25
+<div style="height: 5vh; width:100%">
+  <app-countdown  [totalSecs]="100" 
+                  [remainingSecs]="0" 
+                  [remainingQuestionSecs]="0"  >
+  </app-countdown>    
+</div>
+
+<br>
+<!--  
+<div style="height: 5vh; width:100%">
+  <app-countdown  [totalSecs]="vizData.totalGameSecs" 
+                  [remainingSecs]="vizData.remainingSecs" 
+                  [remainingQuestionSecs]="vizData.remainingQuestionSecs"  >
+  </app-countdown>    
+</div>
+-->
+<hr>
+<br>
+
+<app-access-code-login
+  pageState="NoCodeGenerated">
+</app-access-code-login>
+
+<br>
+
+<app-access-code-login
+  pageState="CheckingCode">
+</app-access-code-login>
+
+<br>
+
+<app-access-code-login
+  pageState="WrongCode">
+</app-access-code-login>
+
+<br>
+
+<app-access-code-login
+  pageState="TimedOut">
+</app-access-code-login>
+<!--  -->
+
+<br>
+
+<app-game-ui>
+
+</app-game-ui>
+<br>
+
+
+<app-more-or-less
+  score="42">
+</app-more-or-less> 
+  
+  <app-footer></app-footer>
+  
+</div>
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+
+

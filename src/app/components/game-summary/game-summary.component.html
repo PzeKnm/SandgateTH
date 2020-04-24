@@ -1,0 +1,48 @@
+
+<!-- 
+<mat-card >
+  <mat-card-header>  
+    <mat-card-title >{{gameSummary.name}}</mat-card-title>
+    <mat-card-subtitle>{{gameSummary.description}}</mat-card-subtitle>
+  </mat-card-header>
+ 
+  <mat-card-content>
+    <div>Status: {{gameSummary.status}}</div>  -->
+<!-- 
+    <a *ngIf="gameSummary.status === 'Online'" [routerLink]="['/AccessCode', gameSummary.id]">{{gameSummary.name}}</a>      
+    
+    <strong *ngIf="gameSummary.status !== 'Online'">Game Not Active</strong> - 
+    -->
+    <!-- 
+    <div>(Last Contact  {{gameSummary.lastContactDate}} )</div>
+  </mat-card-content>
+  <mat-card-actions class="action-buttons">
+    <a *ngIf="gameSummary.status === 'Online'" 
+      mat-button color="primary" 
+      [routerLink]="['/AccessCode', gameSummary.id]" > 
+      {{gameSummary?.name}}
+    </a>
+
+    <strong *ngIf="gameSummary.status !== 'Online'">Game Not Active</strong>
+
+  </mat-card-actions>
+</mat-card>  -->
+
+<div ngClass="summaryTile">
+  <div ngClass="summaryTitle">{{gameSummary.name}}</div>
+
+  <div ngClass="summarySubTitle">{{gameSummary.description}}</div>
+
+  <div>Status: {{gameSummary.status}}</div>
+
+  <div>(Last Contact  {{gameSummary.lastContactDate}} )</div>
+
+  <a *ngIf="gameSummary.status === 'Online'" 
+      mat-button color="primary" 
+      [routerLink]="['/AccessCode', gameSummary.id]" > 
+      {{gameSummary?.name}}
+    </a>
+
+  <strong *ngIf="gameSummary.status !== 'Online'">Game Not Active</strong>
+</div>
+

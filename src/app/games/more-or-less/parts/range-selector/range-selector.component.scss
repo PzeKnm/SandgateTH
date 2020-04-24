@@ -1,0 +1,57 @@
+
+
+
+@import '../../more-or-less.scss';
+
+.gradient_1 {
+  stop-color: $range-marker-gradient1;
+}
+
+.gradient_2 {
+  stop-color: $range-marker-gradient2;
+}
+
+.gradient_3 {
+  stop-color: $range-marker-gradient3;
+}
+
+.gradient_4 {
+  stop-color: $range-marker-gradient4;
+}
+
+
+
+
+
+.hiloLabel { font: bold 0.40vh sans-serif; }
+.answerLabel { font: bold 0.50vh sans-serif; }
+
+.bar {
+  stroke: rgb(0,0,0);
+  stroke-width: 0.3;
+  fill: rgb(0,0,255);
+}
+
+#perimeter {
+  stroke: rgb(0,0,0);
+  stroke-width: 0.3;
+  fill: rgb(146, 154, 167);
+}
+
+
+#slider {
+  stroke-width: 0.3;
+  stroke: $range-selector-slider-stroke-color;
+  fill: $range-selector-slider-fill-color;
+}
+
+
+.label {
+  stroke: black;
+  stroke-width: 0.3;
+  fill: lightblue;
+}
+
+
+
+

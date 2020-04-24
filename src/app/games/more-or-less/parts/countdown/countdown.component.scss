@@ -1,0 +1,36 @@
+
+
+@import '../../../../../styles.scss';
+
+
+
+
+
+// just show the control outline for debugging
+#outside {
+  stroke-width: 0;
+  stroke: rgb(0,0,0);
+  fill: rgb(55, 224, 125);
+}
+
+
+// The grey outline for the bar so you see how big it is in total
+#outline {
+  stroke: $countdown-outline-stroke-color;
+  fill: $countdown-outline-fill-color;
+}
+
+
+// How much is remaining
+#remainingTotal {
+  stroke: $countdown-remaining-stroke-color;
+  fill: $countdown-remaining-fill-color;
+}
+
+// Shows when the current question will be auto-answered
+#remainingQuestion {
+  stroke: $countdown-question-stroke-color;
+  fill: $countdown-question-fill-color;
+}
+
+

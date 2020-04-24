@@ -1,0 +1,28 @@
+
+<div id="finalWrapper">
+
+  <div id="more-or-lessBanner"  >
+    <img id="more-or-lessBannerImg" src='assets/images/more-or-less-banner-logo.svg' alt='image'>
+  </div>
+
+  <app-score [score]="vizData.score" style="margin:auto" >
+  </app-score>
+
+
+  <div>
+
+    {{getScoreCommentary()}}
+
+  </div>
+
+  <div style="height: 5vh">
+    <app-countdown  [totalSecs]="vizData.totalGameSecs" 
+                    [remainingSecs]="vizData.remainingSecs" 
+                    [remainingQuestionSecs]="vizData.remainingQuestionSecs"  >
+    </app-countdown>    
+  </div>
+  
+</div>
+
+
+

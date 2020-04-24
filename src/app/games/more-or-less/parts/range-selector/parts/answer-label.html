@@ -1,0 +1,31 @@
+
+  <!-- 
+ <svg [style.opacity]="opacityValue"  >
+  <rect class="answerlabel" style="fill:rgb(103, 224, 55);stroke-width:0.1;stroke:rgb(0,0,0)"
+      [attr.x.]="getRectXPos()" 
+      [attr.y.]="getRectYPos()"
+      [attr.width.]="width" 
+      [attr.height.]="height"   /> 
+  <text [attr.x.]="getTextXPos()"  [attr.y.]="getTextYPos()"  
+  text-anchor="middle" alignment-baseline="central" class="answerLabel" >{{value}}</text>
+
+  <polygon [attr.points.]="getPoints()" style="fill:rgb(103, 224, 55);stroke-width:0.1;stroke:rgb(0,0,0)" /> 
+  
+  
+</svg>
+--> 
+
+<svg *ngIf="visible" >
+  <rect class="answerlabel" style="fill:rgb(103, 224, 55);stroke-width:0.1;stroke:rgb(0,0,0)"
+      [attr.x.]="getRectXPos()" 
+      [attr.y.]="getRectYPos()"
+      [attr.width.]="width" 
+      [attr.height.]="height"   /> 
+  <text [attr.x.]="getTextXPos()"  [attr.y.]="getTextYPos()"  
+    text-anchor="middle" alignment-baseline="central" 
+    class="answerLabel" >{{value}}</text>
+
+  <polygon [attr.points.]="getPoints()" style="fill:rgb(103, 224, 55);stroke-width:0.1;stroke:rgb(0,0,0)" /> 
+  
+  
+</svg>

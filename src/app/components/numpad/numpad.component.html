@@ -1,0 +1,31 @@
+
+
+<div  ngClass="container" >
+
+  <div ngClass="row">
+    <button ngClass="digitButton" (click)="pushButton('1')">1</button>
+    <button ngClass="digitButton" (click)="pushButton('2')">2</button>
+    <button ngClass="digitButton" (click)="pushButton('3')">3</button>
+  </div>
+  <div ngClass="row">
+    <button ngClass="digitButton" (click)="pushButton('4')">4</button>
+    <button ngClass="digitButton" (click)="pushButton('5')">5</button>
+    <button ngClass="digitButton" (click)="pushButton('6')">6</button>
+  </div>
+  <div ngClass="row">
+    <button ngClass="digitButton" (click)="pushButton('7')">7</button>
+    <button ngClass="digitButton" (click)="pushButton('8')">8</button>
+    <button ngClass="digitButton" (click)="pushButton('9')">9</button>
+  </div>
+  <div ngClass="row">
+    <button ngClass="digitButton" (click)="pushButton('')" disabled="true" ></button>
+    <button ngClass="digitButton" (click)="pushButton('0')">0</button>
+    <button ngClass="digitButton" (click)="pushButton('B')"><fa-icon [icon]="iconBackSpace"></fa-icon></button>
+  </div>
+  <div ngClass="row" style="align-items: center; background-color: rgb(245, 200, 81);"  >
+    <span ngClass="code">{{text}}</span>
+  </div>
+  <div ngClass="row"   >
+    <button ngClass="enterButton" (click)="pushButton('E')" [disabled]= "isEnterDisabled()"><fa-icon [icon]="iconEnter"></fa-icon></button>
+  </div> 
+</div>

@@ -1,0 +1,37 @@
+
+
+
+@import '../../../../../styles.scss';
+
+#flourishBorder {
+  padding: 4vh;
+  position: relative;
+  // fit frame to enclose content and no more
+  display:inline-block;
+  border: 1px solid $banner-background-color;
+}
+
+.svgCorner {
+  width: 8vh;
+  position: absolute;
+}
+
+.svgCornerTR{  
+  top: 0;
+  right: 0;
+}
+
+.svgCornerTL{
+  top: 0;
+  left: 0;
+}
+
+.svgCornerBL{
+  bottom: 0;
+  left: 0;
+}
+
+.svgCornerBR {
+  bottom: 0;
+  right: 0;
+}

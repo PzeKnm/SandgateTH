@@ -1,0 +1,68 @@
+
+<!-- 
+<button (click)="doTest()"  >Test</button>
+<button (click)="doCmd('LN')"  >LN</button>
+<button (click)="doCmd('LP')"  >LP</button>
+<button (click)="doCmd('RN')"  >RN</button>
+
+<button (click)="doCmd('Answer')"  >RP</button>
+
+<span   >{{showAnswer}}</span>
+
+-->
+
+<div >
+
+  <!-- The range selector is nominally 100 wide by 20 tall. The dimensions includes
+        any margins-->
+  <svg width="100%" height="20%" viewBox="0 0 100 20" >
+
+    <defs>
+    </defs>
+ 
+    <!-- Perimeter of control -->
+    <rect id="perimeter" x="0"  y="0" width="100" height="20"     />
+ 
+    <!-- Slider groove -->
+    <rect id="slider" x="10" y="8" width="80" height="4" rx="2" ry="2"/>
+
+    <!-- range boundaries-->
+    <g #labMin minmax-label [value]="min" [flagLeft]="true"
+    [x]="getMinLabelXPos()" [y]="getMinMaxLabelYPos()"  />
+
+    <g #labMax minmax-label [value]="max" [flagLeft]="false"
+    [x]="getMaxLabelXPos()" [y]="getMinMaxLabelYPos()"  />
+
+
+    <!-- Lo -->
+    <g #loMarker range-marker [position]="getLoXPos()" [value]="lo" [flagLeft]="true"  />
+    
+    <!-- Hi -->
+    <g #hiMarker range-marker [position]="getHiXPos()" [value]="hi" [flagLeft]="false" />
+
+    <g #labPotentialScore class="labPotentialScore" potential-score 
+      [value]="potentialScore" [visible]="getPotentialScoreVisibility()"
+      [x]="50" [y]="5"  /> 
+
+    <g #labAnswer class="labAnswer" answer-label 
+      [value]="answer" [visible]="showAnswer"
+      [x]="getAnswerLabelXPos()" [y]="getAnswerLabelYPos()"  />
+
+
+<!-- 
+
+  https://teropa.info/blog/2016/12/12/graphics-in-angular-2.html
+
+  https://books.google.com.au/books?id=Sgqqm6yDhigC&pg=PA63&lpg=PA63&dq=angular+nested+svg&source=bl&ots=5BUKNyzaon&sig=ACfU3U0ySRhvltyJ9SPcyjwm4HKe-3w4xg&hl=en&sa=X&ved=2ahUKEwi0gYS8uonoAhWD6XMBHRemBggQ6AEwB3oECAoQAQ#v=onepage&q&f=false
+  
+ -->
+
+
+  </svg> 
+
+
+
+
+</div>
+
+  

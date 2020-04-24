@@ -1,0 +1,19 @@
+
+<div ngClass="footer">
+  <div>Token details: {{gameTokenDetails}}</div>
+  <div>
+  <a [routerLink]="['/admin']">
+    <span style="color: white;">   Admin  </span>
+  </a> 
+  <a [routerLink]="['/viz']">
+    <span style="color: white;">   Viz  </span>
+  </a> 
+  <a [routerLink]="['/ui']">
+    <span style="color: white;">   UI  </span>
+  </a> 
+
+</div>
+  <div style="font-size: 2vh;">Build timestamp: {{getBuildTimeStamp()}}</div>
+
+</div>
+
