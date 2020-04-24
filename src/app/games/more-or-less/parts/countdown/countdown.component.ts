@@ -13,7 +13,7 @@ export class Countdown implements OnInit {
 
   // The Height of the control
   public controlHeight: number = 10;
-  public controlWidth: number = 100;
+  public controlWidth: number = 200;
 
   // The "dead space" at the terminus of each end
   public endcapRadius: number = (this.controlHeight / 2);
@@ -22,7 +22,7 @@ export class Countdown implements OnInit {
   public strokeWidthOutline = 1.0;
 
   // The width of the "remaining" bar
-  public strokeWidthRemaining = 1.0;
+  public strokeWidthRemaining = 0.0;
   
   constructor() { } 
 
@@ -64,7 +64,8 @@ export class Countdown implements OnInit {
   
   getOutlinePath(): string {
     const offset = (this.controlHeight / 2);
-    return this.getOvalPath(offset, this.strokeWidthOutline, 0, 90);
+    return this.getOvalPath(offset, 
+      this.strokeWidthOutline, 0, this.controlWidth - (this.endcapRadius * 2));
   }
 
 
