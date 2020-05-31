@@ -1,3 +1,19 @@
 
 
-@import "../range-selector.component.scss"
+@import "../range-selector.component.scss";
+
+
+
+.answerLabel {
+  stroke-width: 0.3;  
+  stroke: $range-selector-answer-stroke-color;
+  fill: $range-selector-answer-fill-color;
+}
+
+.answerLabelText {
+  font: 0.30vh sans-serif; 
+  stroke: black;
+  stroke-width: 0.2;
+}
+
+

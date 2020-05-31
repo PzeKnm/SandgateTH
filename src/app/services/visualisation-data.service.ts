@@ -28,6 +28,7 @@ export class Question
 
 export class VisualisationData {
 
+  public environmentStatus: number
   public gameState: string;
 
   /**

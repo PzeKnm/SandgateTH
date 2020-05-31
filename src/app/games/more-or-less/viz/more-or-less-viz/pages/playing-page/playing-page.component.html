@@ -6,20 +6,24 @@
 <div style="display: flex; flex-direction: column;" >
 
   <!--  <button (click)="incScore()"  >Inc score</button>-->
-  <app-score [score]="vizData.score" style="margin:auto" >
+  <app-score [score]="vizData.score" style="font-size: 5vw; margin:auto; height: 15vh;" >
   </app-score>
 
   <!--
   <button (click)="changeQuestion()"  >change Q</button>-->
 
-  <app-question requiredHeight="15vh" style="font-size: 3vw; width:80%; height: 15vh; margin:auto" [question]="vizData.currentQuestion.questionText"   >
+  <app-question requiredHeight="10vh" 
+    style="font-size: 4vw; width:80%; height: 20vh; margin:auto" 
+    [question]="vizData.currentQuestion.questionText"   >
   </app-question>
 
 
-  <app-answer-hint [min]="vizData.currentQuestionMin"
-                  [max]="vizData.currentQuestionMax" ></app-answer-hint>
+  <app-answer-hint 
+    [min]="vizData.currentQuestionMin" [max]="vizData.currentQuestionMax" 
+    style="height: 10vh; font-size: 3vw; text-align: center;" ></app-answer-hint>
 
-  <app-range-selector [min]="vizData.currentQuestionMin"
+  <app-range-selector style="height: 45vh; "
+                      [min]="vizData.currentQuestionMin"
                       [max]="vizData.currentQuestionMax"
                       [lo]="vizData.currentAnswerLo"
                       [hi]="vizData.currentAnswerHi" 
@@ -28,7 +32,7 @@
                       [potentialScore]="vizData.potentialScore" >
   </app-range-selector>
 
-  <div style="height: 10vh">
+  <div style="height: 5vh">
     <app-countdown  [totalSecs]="vizData.totalGameSecs" 
                     [remainingSecs]="vizData.remainingSecs" 
                     [remainingQuestionSecs]="vizData.remainingQuestionSecs"  >

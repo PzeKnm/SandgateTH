@@ -3,16 +3,19 @@
 <!--  -->
 <div ngClass="divQuestion"  
     [@questionChanged]="questionStatus"
-    (@questionChanged.done)="animationDone($event)" >
+    (@questionChanged.done)="animationDone($event)"
+    style="text-align: center; height: 100%;"  >
  
-  <app-frame-text  vbHeight="30" vbWidth="20" 
-    radius="1"  strokeWidth="0.6" strokeColour="#000" fillColour="#eee" >
+    <!--  vbHeight="30" vbWidth="20"  -->
+  <app-frame-text   fillType="cogs" fillSize="100"
+    radius="1"  strokeWidth="0.6" strokeColour="#000" fillColour="#ccc" >
    
       <div class="questionText" 
         style=" display: flex; justify-content: center; align-items: center;"
-        [style.height]="requiredHeight"   > 
+          > 
         {{displayedText}} 
-      </div>     
+      </div> 
+      <!--  [style.height]="requiredHeight"  -->    
 
   </app-frame-text>
 

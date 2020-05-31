@@ -2,7 +2,7 @@
  
   <div style="display: flex; flex-direction: row; font-size: 3vh;" >
 
-    <div style="display: flex; flex-direction: column;flex-basis: 40%;" >
+    <div style="display: flex; flex-direction: column;flex-basis: 35%;" >
 
       <div class="instructions" style="margin-top: 0vh;"   >
         A question will appear together with a minimum and maximum value for the answer.
@@ -31,10 +31,9 @@
         </div> 
       </div>
 
-
     </div>
 
-    <div style="display: flex; flex-direction: column;flex-basis: 40%; align-items: center;" >
+    <div style="display: flex; flex-direction: column;flex-basis: 45%; align-items: center;" >
 
       <app-question requiredHeight="15vh" style="font-size: 3vw; width:80%; height: 15vh" question="When was the Battle of Waterloo?"   >
       </app-question> 
@@ -46,18 +45,18 @@
       </app-range-selector>
  
       <div  style="display:flex; flex-direction: row; position:relative; width:50vh; height:15vh" >
-        <app-more-or-less-button type="DecLo" ></app-more-or-less-button>        
-        <app-more-or-less-button type="IncLo"  ></app-more-or-less-button>
+        <app-more-or-less-button [isMin]=true type="DecLo" ></app-more-or-less-button>        
+        <app-more-or-less-button [isMin]=true type="IncLo"  ></app-more-or-less-button>
         <div style="margin:1vw"  > </div>
-        <app-more-or-less-button type="DecHi" ></app-more-or-less-button>  
-        <app-more-or-less-button type="IncHi" ></app-more-or-less-button>
+        <app-more-or-less-button [isMin]=false type="DecHi" ></app-more-or-less-button>  
+        <app-more-or-less-button [isMin]=false type="IncHi" ></app-more-or-less-button>
       </div>   
 
     </div>
 
     <div style="display: flex; flex-direction: column;flex-basis: 20%;"  >
 
-      <app-flourish-text  flourishStyle="nice"       > 
+      <app-flourish-text      > 
 
         <div  style="display: flex; flex-direction: column; align-items: center;">
 
@@ -91,6 +90,13 @@
       </app-flourish-text>
     </div>
   
+  </div>
+
+  <div style="height: 5vh; margin-top: 5vh;">
+    <app-countdown  [totalSecs]="vizData.totalGameSecs" 
+                    [remainingSecs]="vizData.remainingSecs" 
+                    [remainingQuestionSecs]="vizData.remainingQuestionSecs"  >
+    </app-countdown>    
   </div>
 
 </div>

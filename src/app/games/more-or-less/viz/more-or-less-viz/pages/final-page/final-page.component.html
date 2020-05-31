@@ -5,17 +5,26 @@
     <img id="more-or-lessBannerImg" src='assets/images/more-or-less-banner-logo.svg' alt='image'>
   </div>
 
-  <app-score [score]="vizData.score" style="margin:auto" >
-  </app-score>
+  <app-score 
+    [score]="vizData.score" 
+    style="font-size: 5vw; margin:auto; height: 15vh;" >
+  </app-score>  
 
 
-  <div>
+  <app-flourish-text   > 
+    <div style="height: 25vh"  >
+      {{getScoreCommentary()}}
+    </div>
+  </app-flourish-text>  
+
+<!--
+  <div style="height: 25vh">
 
     {{getScoreCommentary()}}
 
-  </div>
+  </div>  -->
 
-  <div style="height: 10vh">
+  <div style="height: 5vh; width: 90vw;">
     <app-countdown  [totalSecs]="vizData.totalGameSecs" 
                     [remainingSecs]="vizData.remainingSecs" 
                     [remainingQuestionSecs]="vizData.remainingQuestionSecs"  >

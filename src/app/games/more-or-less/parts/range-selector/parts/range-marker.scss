@@ -4,23 +4,16 @@
 
 
 
-/*
-.bar {
-  stroke: rgb(0,0,0);
-  stroke-width: 0.3;
-  fill: rgb(0,0,255);
-}
-
-
-*/
-
 .label {
   stroke: black;
-  stroke-width: 0.3;
+ // stroke-width: 0.3;
   fill: lightblue;
 }
 
-/*
-.minMaxlabel {
-  fill: lightpink;
-}*/
+.labelText {
+  font: bold 0.30vh sans-serif;
+  stroke: black;
+  stroke-width: 0.1;
+}
+
+

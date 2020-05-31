@@ -3,6 +3,9 @@ import { DataCacheService } from 'src/app/services/data-cache.service';
 import { UserDto } from 'src/app/shared/model/game';
 import { Subscription } from 'rxjs';
 import { VisualisationData, Question } from 'src/app/services/visualisation-data.service';
+import { MyValidationError, MyAssertionError } from 'src/app/services/global-error-handler';
+import { HttpErrorResponse } from '@angular/common/http';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'ui-admin-view',
@@ -66,5 +69,98 @@ export class UiViewComponent implements OnInit, OnDestroy {
   }
 
 
+  doTest(): void {
+    /*
+    try {
+      throw new Error('An error occurred');
+     }
+     catch (error) {
+      console.error('Here is the error message', error);
+     }
+     console.log('Execution continues');
+
+     throw new Error('Another error occurred');
+*/
+
+//const obj = JSON.parse('{ "name": "John", "age": 30 }}');  
+  //   const s = new SyntaxError('fdsdsf');
+ // FormControl
+
+ // throw new MyValidationError('Another error occurred', 'fdsfds');
+
+//  try {
+
+
+     throw new MyAssertionError('this should not happen');
+
+    const err = new HttpErrorResponse({
+      error: 'My error',
+      status: 499,
+      statusText: 'hhtp error of some kind'
+    });
+
+    const c1 = ((/** @type {?} */ (err)))["ngDebugContext"];
+
+    // err["ngDebugContext"]='Dont overwrite me!';
+
+    const c2 = ((/** @type {?} */ (err)))["ngDebugContext"];
+
+    if (err instanceof HttpErrorResponse) {
+      console.log('Its a HttpErrorResponse Error');
+    } 
+
+    if (err instanceof Error) {
+      console.log('Its a Error Error');
+    } 
+
+    const synErr = new SyntaxError('gfdgfg');
+    if (synErr instanceof SyntaxError) {
+      console.log('Its a SyntaxError Error');
+    } 
+
+    if (synErr instanceof Error) {
+      console.log('Its a Error Error');
+    }     
+
+
+
+    throw err;    
+//  }
+  /*
+  catch (e) {
+    if (e instanceof HttpErrorResponse) {
+      console.log('Its a HttpErrorResponse Error');
+      throw e;
+    }
+
+    if (e instanceof Error) {
+      console.log('Its a Error');
+    }
+  }*/
+
+
+
+  
+    // throw new MySimpleError('A simple error');
+
+     try {
+      throw new MyValidationError('Another error occurred', 'fdsfds');
+    //  const obj = JSON.parse('{ "name": "John", "age": 30 }}');    
+    //  console.log(obj);
+     }
+     catch (err) {
+      if (err instanceof MyValidationError) {
+        console.log('Its a Validation Error');
+      }
+  
+      if (err instanceof SyntaxError) {
+        console.log('Its a Syntax Error');
+      }
+     }
+
+
+
+
+  }
 
 }

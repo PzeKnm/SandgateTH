@@ -15,6 +15,8 @@ export class MoreOrLessButton implements OnInit {
   @Input() type: string;
 
   @Input() size: string = '10vw';
+
+  @Input() isMin: boolean = true;
   
   @Output() command = new EventEmitter<string>();
   constructor() { }  

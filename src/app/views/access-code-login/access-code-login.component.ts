@@ -79,7 +79,9 @@ export class AccessCodeLoginView implements OnInit, OnDestroy {
     );
 
     // .. and kick off the find.
-    this.dataCache.getGame(this.gameId);
+    if (this.gameId !== undefined) {
+      this.dataCache.getGame(this.gameId);
+    }
 
     // Subscribe to the results of trying an access code.
     this.subscriptions.add(

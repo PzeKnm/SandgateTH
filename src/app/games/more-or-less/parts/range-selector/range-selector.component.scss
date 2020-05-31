@@ -3,28 +3,41 @@
 
 @import '../../more-or-less.scss';
 
-.gradient_1 {
-  stop-color: $range-marker-gradient1;
+.gradient_min1 {
+  stop-color: $range-marker-gradientmin1;
 }
 
-.gradient_2 {
-  stop-color: $range-marker-gradient2;
+.gradient_min2 {
+  stop-color: $range-marker-gradientmin2;
 }
 
-.gradient_3 {
-  stop-color: $range-marker-gradient3;
+.gradient_min3 {
+  stop-color: $range-marker-gradientmin3;
 }
 
-.gradient_4 {
-  stop-color: $range-marker-gradient4;
+.gradient_min4 {
+  stop-color: $range-marker-gradientmin4;
+}
+
+
+.gradient_max1 {
+  stop-color: $range-marker-gradientmax1;
+}
+
+.gradient_max2 {
+  stop-color: $range-marker-gradientmax2;
+}
+
+.gradient_max3 {
+  stop-color: $range-marker-gradientmax3;
+}
+
+.gradient_max4 {
+  stop-color: $range-marker-gradientmax4;
 }
 
 
 
-
-
-.hiloLabel { font: bold 0.40vh sans-serif; }
-.answerLabel { font: bold 0.50vh sans-serif; }
 
 .bar {
   stroke: rgb(0,0,0);
@@ -33,9 +46,9 @@
 }
 
 #perimeter {
-  stroke: rgb(0,0,0);
-  stroke-width: 0.3;
-  fill: rgb(146, 154, 167);
+  stroke-width: 1.0;  
+  stroke: $range-selector-background-stroke-color;
+  fill: $range-selector-background-fill-color;
 }
 
 
@@ -47,9 +60,9 @@
 
 
 .label {
-  stroke: black;
-  stroke-width: 0.3;
-  fill: lightblue;
+  stroke-width: 0.3;  
+  stroke: $range-selector-label-stroke-color;
+  fill: $range-selector-label-fill-color;
 }
 
 

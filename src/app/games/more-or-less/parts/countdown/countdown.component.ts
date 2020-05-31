@@ -13,7 +13,7 @@ export class Countdown implements OnInit {
 
   // The Height of the control
   public controlHeight: number = 10;
-  public controlWidth: number = 200;
+  public controlWidth: number = 500;
 
   // The "dead space" at the terminus of each end
   public endcapRadius: number = (this.controlHeight / 2);

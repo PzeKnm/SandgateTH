@@ -1,3 +1,17 @@
 
 
-@import "../range-selector.component.scss"
+@import "../range-selector.component.scss";
+
+
+
+.potentialScore {
+  stroke-width:0.1;
+  fill:rgb(224, 221, 55);
+  stroke:rgb(0,0,0);
+}
+
+.potentialScoreText {
+  font: 0.30vh sans-serif; 
+  stroke: black;
+  stroke-width: 0.2;
+}

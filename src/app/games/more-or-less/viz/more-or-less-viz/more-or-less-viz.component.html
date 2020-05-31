@@ -2,7 +2,7 @@
 <div *ngIf="(isConnected === true); else elseBlock">
 
   <div *ngIf="isActivePage('Initialised') || isActivePage('Activated') || isActivePage('Online')">
-    <app-intro-page></app-intro-page>
+    <app-intro-page [vizData]="vizData" ></app-intro-page>
   </div>
 
   <div *ngIf="isActivePage('Authenticating')">
@@ -10,7 +10,7 @@
   </div>
 
   <div *ngIf="isActivePage('PreGame')">
-    <app-pregame-page></app-pregame-page>
+    <app-pregame-page    [vizData]="vizData"></app-pregame-page>
   </div>
 
   <div *ngIf="isActivePage('GamePlaying')">

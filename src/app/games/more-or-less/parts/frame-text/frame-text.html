@@ -8,6 +8,8 @@
           enough to accomodate the svg from the file, else the svg will be clipped.
           To make the svg scale up bigger, use a larger width and height.
         -->
+
+          <!-- Checkerplate-->
           <pattern [attr.id.]="getCheckerplateId()" x="0" y="0" width="40" height="40" 
               viewBox="0 0 10 10"  patternUnits="userSpaceOnUse">                 
             <rect x="0" y="0" width="10" height="10" [attr.fill.]="getFillColour()"></rect>              
@@ -28,6 +30,19 @@
               </g>
               </g>
             </g>                
+          </pattern>
+
+          <!-- Cogs    -->
+          <pattern [attr.id.]="getCogsId()" x="0" y="0" [attr.width.]="getWidth()" [attr.height.]="getHeight()"
+              viewBox="0 0 360 360"  patternUnits="userSpaceOnUse">                 
+         <!--    <rect x="0" y="0" width="10" height="10" [attr.fill.]="getFillColour()"></rect> 
+           -->
+            <!--   -->
+            <g [attr.fill.]="getFillColour()"  >
+              <path [attr.d.]="getCogsPoints()">
+              </path>
+            </g>
+
           </pattern>
 
       </defs>

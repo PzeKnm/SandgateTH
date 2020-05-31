@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, ErrorHandler } from '@angular/core';
 import { HttpInterceptor, HttpRequest, HttpEvent, HttpHandler } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { DataCacheService } from '../services/data-cache.service';
@@ -18,6 +18,8 @@ export class AddHeaderInteceptorService implements HttpInterceptor {
     });
 
     return next.handle(authReq);
+
+    ErrorHandler
 
   }
 }

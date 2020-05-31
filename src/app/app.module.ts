@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //// import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule } from '@angular/material';
 
@@ -51,6 +51,7 @@ import { FrameText } from './games/more-or-less/parts/frame-text/frame-text';
 import { GraphicDisplay } from './games/more-or-less/parts/graphic-display/graphic-display';
 import { AccessCodeLoginView } from './views/access-code-login/access-code-login.component';
 import { GameUIView } from './views/game-ui/game-ui.component';
+import { GlobalErrorHandler } from './services/global-error-handler';
 
 
 @NgModule({
@@ -113,6 +114,7 @@ import { GameUIView } from './views/game-ui/game-ui.component';
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AddHeaderInteceptorService, multi: true },
+    { provide: ErrorHandler, useClass: GlobalErrorHandler},
     AlertService,
     SignalRService,
     VisualisationDataService,

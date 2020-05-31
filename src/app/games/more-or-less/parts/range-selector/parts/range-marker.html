@@ -19,7 +19,8 @@
   <!--  
   <circle  [attr.cx.] ="getXPos()" [attr.cy.]="getYPos()" fill="url(#Shiny)"  r="4"  />
   -->
-  <g #marker range-marker-symbol [x]="getXPos()" [y]="getYPos()" [radius]="4" />
+  <g #marker range-marker-symbol [x]="getXPos()" [y]="getYPos()" 
+    [radius]="4" [isMin]="flagLeft"   />
   
   <line class="label" [attr.x1.]="getXPos()" y1="10" 
       [attr.x2.]="getXPos()"  [attr.y2.]="getFlagYPos()" />
@@ -29,7 +30,7 @@
 
   <text [attr.x.]="getTextXPos()"  [attr.y.]="getTextYPos()"  
     text-anchor="middle" alignment-baseline="central" 
-    class="hiloLabel" >{{value}}</text>
+    class="labelText" >{{value}}</text>
 </svg>
 
 

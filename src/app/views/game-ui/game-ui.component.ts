@@ -34,6 +34,9 @@ export class GameUIView implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    if(this.gameId === undefined) {
+      return;
+    }
     // Check that game Token is valid
     
     if(!this.dataCache.hasValidGameToken(this.gameId)) {

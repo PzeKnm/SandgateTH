@@ -16,6 +16,12 @@ export class FlourishText implements OnInit {
   }
 
 
-
+  getUrl()
+  {
+    if(this.flourishStyle === undefined || this.flourishStyle === '') {
+      return '';
+    }
+    return 'url(./assets/images/' + this.flourishStyle + ')';
+  }
 
 }

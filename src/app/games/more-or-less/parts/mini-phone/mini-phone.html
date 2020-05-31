@@ -8,10 +8,18 @@
       </g>  
 
       <!-- a button to move the slider-->
-      <g id="sliderButton" >
+      <g id="sliderButtonMin" >
         <rect  height="13" width="13" style="fill:#cccccc;stroke:#151a0e" />
-        <g #marker range-marker-symbol [x]="6" [y]="6" [radius]="5" /> 
+        <g #marker range-marker-symbol [x]="6" [y]="6" 
+           [radius]="5" [isMin]=true/> 
+      </g>   
+      
+      <g id="sliderButtonMax" >
+        <rect  height="13" width="13" style="fill:#cccccc;stroke:#151a0e" />
+        <g #marker range-marker-symbol [x]="6" [y]="6" 
+           [radius]="5" [isMin]=false/> 
       </g>        
+
     </defs>
 
     <!-- 
@@ -67,10 +75,10 @@
 
 <!-- Slider buttons   -->
 <g [attr.display.]="getSliderButtonsVisibility()" id="sliderButtons"  >
-  <use xlink:href="#sliderButton" x="10" y="50" />
-  <use xlink:href="#sliderButton" x="25" y="50" />
-  <use xlink:href="#sliderButton" x="42" y="50" />
-  <use xlink:href="#sliderButton" x="57" y="50" />  
+  <use xlink:href="#sliderButtonMin" x="10" y="50" />
+  <use xlink:href="#sliderButtonMin" x="25" y="50" />
+  <use xlink:href="#sliderButtonMax" x="42" y="50" />
+  <use xlink:href="#sliderButtonMax" x="57" y="50" />  
 </g>
 
 <!-- ANSWER button   -->

@@ -1,6 +1,11 @@
 
 <div id="introWrapper">
 
+  <!-- 
+  <div >
+    env: {{vizData.environmentStatus}}
+  </div>  -->
+
   <div id="more-or-lessBanner"  >
     <img id="more-or-lessBannerImg" src='assets/images/more-or-less-banner-logo.svg' alt='image'>
   </div>
@@ -17,10 +22,11 @@
 
   <div id="introHori">
 
+
+    
     <div id="introInstructions"    > 
-      <app-frame-text  
-        vbHeight="30" vbWidth="20" 
-        radius="1"  strokeWidth="0.6" strokeColour="#000" fillColour="#eee" >
+      <app-frame-text  fillType="cogs" fillSize="100"
+        radius="1"  strokeWidth="0.6" strokeColour="#000" fillColour="#ccc" >
 
         <div class="introInstructionText">The questions always have numeric answers. </div> 
         <div class="introInstructionText">Don't worry if you don't know the exact answer; have a guess by 

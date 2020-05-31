@@ -13,7 +13,50 @@
 <p ngClass="text"  >
   A convenient place to test the VIZ styling:
 </p>
+<!--
+<app-flourish-text flourishStyle="cogsSml.svg">
+  <div>Some text for small</div>
+</app-flourish-text>
 
+<app-flourish-text flourishStyle="cogsMed.svg">
+  <div>Some text for medium</div>
+</app-flourish-text>
+
+<app-flourish-text flourishStyle="cogs.svg">
+  <div>Some text for large</div>
+</app-flourish-text>
+  -->
+<div style="height:60vh">
+  <!--  vbHeight="10" vbWidth="20"  -->
+
+  <div style="height:10vh" >
+    <app-frame-text  
+    fillType="checkerplate"
+      radius="1"  strokeWidth="0.6" strokeColour="#000" fillColour="#eee" >
+
+      <div >checkerplate. checkerplate.checkerplate.</div> 
+
+    </app-frame-text>
+
+  </div>
+
+
+  <!--  vbHeight="30" vbWidth="20" -->
+  <div style="height:40vh" >
+    <app-frame-text  
+      fillType="cogs" fillSize="30"
+      radius="1"  strokeWidth="0.6" strokeColour="#000" fillColour="#f00" > 
+
+      <div >cogs. cogs.cogs.</div> 
+
+    </app-frame-text>    
+  </div>
+
+
+
+
+
+</div>
 
   <!--  
   <button (click)="incScore(1)"  >Inc score</button>
@@ -36,7 +79,7 @@
 <!-- -->
 <hr>
 <div style="width:100%">  
-  <app-intro-page >  </app-intro-page>
+  <app-intro-page [vizData]="vizData" >  </app-intro-page>
 </div>
 
 <!-- -->
@@ -54,7 +97,7 @@
 
 <hr>
 <div style="width:100%">  
-  <app-pregame-page  >  </app-pregame-page>
+  <app-pregame-page  [vizData]="vizData" >  </app-pregame-page>
 </div>
 
 
