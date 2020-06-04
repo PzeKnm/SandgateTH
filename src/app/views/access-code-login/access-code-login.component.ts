@@ -219,6 +219,10 @@ export class AccessCodeLoginView implements OnInit, OnDestroy {
               this.pageState === PageState.CheckingCode );
   }
 
+  showGraphic(): boolean {
+    return (this.showInputControls() === false);
+  }
+
   public getBannerImage(): string {
 
     if(this.gameId !== undefined) {
@@ -227,6 +231,31 @@ export class AccessCodeLoginView implements OnInit, OnDestroy {
       }
     }
     return 'assets/images/game-logo-banner.svg';
+  }
+
+  public getGraphicImage(): string {
+
+    if (this.pageState == PageState.GameNotOnline) {
+      return 'assets/images/out-of-order.jpg';
+    }
+
+    if (this.pageState == PageState.GameBusy) {
+      return 'assets/images/engaged.jpg';
+    }
+
+    if (this.pageState == PageState.GenerateCode) {
+      return 'assets/images/generate-code.jpg';
+    }
+
+    if (this.pageState == PageState.NoCodeGenerated) {
+      return 'assets/images/out-of-order.jpg';
+    }
+
+    if (this.pageState == PageState.TimedOut) {
+      return 'assets/images/out-of-time.jpg';
+    }
+
+    return 'assets/images/out-of-order.jpg';
   }
 
 

@@ -1,0 +1,79 @@
+
+@import "../more-or-less-viz.component.scss";
+#introWrapper {
+  display: flex; 
+  flex-direction: column; 
+}
+
+
+
+
+
+#introTagLine {
+  font-size: 8vh;
+  margin: 0 auto;
+}
+
+#introHori {
+  display: flex; 
+  flex-direction: row; 
+
+  border: 5px solid #0c0d3a;
+  height: 55vh;
+}
+
+#introInstructions {
+  flex-basis: 75%;
+  position:relative; 
+  // border: 5px solid #83e632;
+  margin: 1vh;
+}
+
+.introInstructionText {
+  font-size: 4.5vh;
+  margin-top: 2vh;
+  padding: 2vh;
+}
+
+#introScanCode {
+  flex-basis: 25%;
+  display: flex; 
+  flex-direction: column;   
+  font-size: 3.5vh;
+  // border: 5px solid #4f51db;
+  margin: 1vh;
+}
+
+/*
+#introTitle {
+  font-size: 10vh;
+  border: solid 1px;
+}*/
+
+.introText {
+  font-size: 3vh;
+  border: solid 1px;
+  background-color: whitesmoke;
+  text-align-last: center; 
+  position: relative;
+}
+
+#introQRCode {
+  height: 35vh;
+}
+
+#introScanToPlay{
+ // display: flex; 
+ // flex-direction: column;   
+  font-size: 7vh;
+}
+
+
+.instructions {
+  font-size: 4vh;
+  border-radius: 15px;
+  background: rgb(255, 255, 255);
+  max-width: 40vw;
+  align-self: flex-end;
+  padding: 2vh;
+}

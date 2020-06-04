@@ -1,0 +1,20 @@
+
+  <div id="buttonWrapper"  >
+    <button  class="moreOrLessButton" (click)="doCommand(type)">
+      <svg width="100%" height="100%" viewBox="0 0 100 100" >
+        <rect class="slider" [attr.x.]="getRectX()" y="30" width="50" height="40" style="stroke-width:3" />
+        
+        <!--  -->
+        <g #marker range-marker-symbol [x]="50" [y]="50" 
+        [radius]="30"  [isMin]="isMin"/>  
+        
+        
+        <polygon [attr.points.]="getPoints()" style="fill:lime;stroke:purple;stroke-width:1" /> 
+      </svg> 
+    </button>
+  </div> 
+
+
+
+
+

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  timeStamp: '31/05/2020 08:43:15 PM AEST',
+  timeStamp: '04/06/2020 09:55:19 PM AEST',
 };
 
 /*

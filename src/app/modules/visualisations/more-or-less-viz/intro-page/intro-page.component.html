@@ -1,0 +1,69 @@
+
+<div id="introWrapper">
+
+  <!-- 
+  <div >
+    env: {{vizData.environmentStatus}}
+  </div>  -->
+
+  <div id="more-or-lessBanner"  >
+    <img id="more-or-lessBannerImg" src='assets/images/more-or-less-banner-logo.svg' alt='image'>
+  </div>
+ 
+
+  <div style="font-family: 'Vast Shadow';padding:0vh; position:relative; width:100%; height:10vh">
+      <!-- xxx  xxx  -->
+    <app-corrie-text text="A quiz game for those who... just aren't sure"   
+      vbHeight="5" vbWidth="100" 
+      radius="1"  strokeWidth="0.6" strokeColour="#000" fillColour="#fff"
+      fontSize="0.15" fontSizeUnit="vw"  >          
+    </app-corrie-text>
+  </div> 
+
+  <div id="introHori">
+
+
+    <!--   xxx xxx -->
+    <div id="introInstructions"    > 
+      <app-frame-text  fillType="cogs" fillSize="100"
+        radius="1"  strokeWidth="0.6" strokeColour="#000" fillColour="#ccc" >
+
+        <div class="introInstructionText">The questions always have numeric answers. </div> 
+        <div class="introInstructionText">Don't worry if you don't know the exact answer; have a guess by 
+          selecting a range that you think is...more or less right!   </div>
+        <div class="introInstructionText">The narrower your range, the more points you can score.  </div>  
+       
+      </app-frame-text>
+      
+    </div>
+
+     
+    <div id="introScanCode">
+     <!-- <app-frame-text  
+        vbHeight="30" vbWidth="20" radius="1"  strokeWidth="0.6" strokeColour="#000" fillColour="#eee" >
+          <div style="display:flex; flex-direction: column; margin-top: 5vh; align-items: center;">
+
+            <div>
+              <img id="introQRCode" src='assets/images/QrCodeMoreOrLess.png' alt='image'>
+            </div>
+            <span id="introScanToPlay">Scan to play</span>
+          </div> 
+
+      </app-frame-text>-->
+
+      <div class="instructions" style="margin-top: 0vh;"   >
+        <div>
+          <img id="introQRCode" src='assets/images/QrCodeMoreOrLess.png' alt='image'>
+        </div>
+        <span id="introScanToPlay">Scan to play</span>
+      </div>
+
+      
+    </div> 
+
+
+  </div>
+</div>
+
+
+

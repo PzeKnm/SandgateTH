@@ -35,24 +35,35 @@
       {{getMessageText()}}
     </div>
 
-    <div *ngIf="showInputControls() === true"
-      style="height:59vh; width:60vw; background-color: rgb(132, 240, 30);" >
+    <div style="height:59vh; width:60vw">
 
-      <app-numpad 
-        [codeLength]="4"
-        [autoEnterLength]="0" 
-        (textEntered)="onEnterCode($event)">
-      </app-numpad>
+      <div *ngIf="showInputControls() === true" >
 
-  
-      <div style="height:4vh">
-        <app-countdown  [totalSecs]="cAuthenticationTimeout" 
-          [remainingSecs]="getTimeRemaining()" 
-          remainingQuestionSecs="0"  >
-        </app-countdown>        
-      </div>
-  
-    </div>  
+        <app-numpad 
+          [codeLength]="4"
+          [autoEnterLength]="0" 
+          (textEntered)="onEnterCode($event)">
+        </app-numpad>
+    
+        <div style="height:4vh">
+          <app-countdown  [totalSecs]="cAuthenticationTimeout" 
+            [remainingSecs]="getTimeRemaining()" 
+            remainingQuestionSecs="0"  >
+          </app-countdown>        
+        </div>
+    
+      </div>  
+
+      <div *ngIf="showGraphic() === true"   >      
+        <img id="more-or-lessBannerImg" src="{{getGraphicImage()}}" alt='image'
+              style="height:100%; width: 100%">    
+      </div>  
+
+    </div>
+
+
+
+
    
   </div>
   <div style="height:5vh; background-color: rgb(88, 209, 77);">

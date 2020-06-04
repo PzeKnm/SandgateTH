@@ -1,0 +1,14 @@
+
+
+@import "../more-or-less-viz.component.scss";
+
+#finalWrapper {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+#score {
+  font-size: 10vh;
+  text-align: center;
+} 

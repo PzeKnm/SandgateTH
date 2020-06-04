@@ -1,0 +1,69 @@
+// The place where the color scheme for MoR is defined
+
+@import "../../styles.scss";
+
+// 
+// https://mycolor.space/?hex=%23BD222E&sub=1
+
+$score-background-color: rgb(255, 255, 255);
+$score-border-color: rgb(234, 24, 129);
+
+
+$range-selector-background-fill-color: #d6f4ff;
+$range-selector-background-stroke-color: #5d7a98;
+
+$range-selector-slider-fill-color: #bfa5a2;
+$range-selector-slider-stroke-color: #bd222e;
+
+// Top row static labels
+$range-selector-minmax-fill-color: #bfa5a2;
+$range-selector-minmax-stroke-color: #5d7a98;
+
+// Moving labels
+$range-selector-label-fill-color: #65b1f3;
+$range-selector-label-stroke-color: #5d7a98;
+
+// answer shape
+$range-selector-answer-fill-color: #76a218;
+$range-selector-answer-stroke-color: #3f6e00;
+
+
+
+
+$range-selector-ball-fill-color: #bcd144;
+$range-selector-ball-stroke-color: #0e1553;
+
+$range-marker-gradientmin1: #ffffff;
+$range-marker-gradientmin2: rgb(254, 245, 170);
+$range-marker-gradientmin3: rgb(211, 163, 94);
+$range-marker-gradientmin4: #000000;
+
+
+$range-marker-gradientmax1: #ffffff;
+$range-marker-gradientmax2: rgb(252, 224, 185);
+$range-marker-gradientmax3: rgb(151, 120, 93);
+$range-marker-gradientmax4: #000000;
+
+/*
+$range-marker-gradientmin1: #ffffff;
+$range-marker-gradientmin2: #ffc040;
+$range-marker-gradientmin3: #ff8040;
+$range-marker-gradientmin4: #000000;
+
+
+$range-marker-gradientmax1: #ffffff;
+$range-marker-gradientmax2: #87a77f;
+$range-marker-gradientmax3: #dcfdf0;
+$range-marker-gradientmax4: #000000;
+*/
+/*
+$range-marker-gradient1: #ffffff;
+$range-marker-gradient2: #4d40ff;
+$range-marker-gradient3: #ff40a6;
+$range-marker-gradient4: #000000;
+*/
+
+
+
+
+ 

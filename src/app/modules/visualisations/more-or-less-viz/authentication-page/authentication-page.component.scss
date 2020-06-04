@@ -1,0 +1,20 @@
+@import "../more-or-less-viz.component.scss";
+
+#authText {
+  font-size: 10vh;
+  text-align: center;
+}
+
+#authCode {
+  font-size: 20vh;
+  text-align: center;
+}
+
+.instructions {
+  font-size: 4vh;
+  border-radius: 15px;
+  background: rgb(255, 255, 255);
+  
+  align-self: flex-end;
+  padding: 2vh;
+}

@@ -1,0 +1,51 @@
+
+<div style="display: flex; flex-direction: column;" >
+
+  <div id="more-or-lessBanner"  >
+    <img id="more-or-lessBannerImg" src='assets/images/more-or-less-banner-logo.svg' alt='image'>
+  </div>
+
+  <div style="display: flex; flex-direction: row;" >
+
+    <div class="instructions" style="display: flex; flex-direction: column; flex-basis: 65%;"   >
+
+      <div id="authText"   >
+        Enter access code
+      </div>
+  
+      <div style="display: flex; flex-direction: row; justify-content: center;" >
+  
+        <div style="display: flex;    position:relative; width:30vh; height:30vh" >
+          <app-graphic-display picture="HandRight"    ></app-graphic-display>
+        </div>
+
+        <div style="position:relative; width:30vh; height:30vh" >
+          <!-- xxx  -->
+          <app-mini-phone [showKeyPad]="true" >
+          </app-mini-phone> 
+        </div>
+  
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; flex-basis: 35%; align-self: center;" >
+
+      <app-flourish-text   > 
+        <div id="authCode"  >
+          {{vizData.accessCode}}
+        </div>
+      </app-flourish-text>  
+
+    </div>
+  
+  </div>
+
+
+  <div style="height: 5vh; margin-top: 5vh;">
+    <app-countdown  [totalSecs]="vizData.totalGameSecs" 
+                    [remainingSecs]="vizData.remainingSecs" 
+                    [remainingQuestionSecs]="vizData.remainingQuestionSecs"  >
+    </app-countdown>    
+  </div>
+
+</div>
