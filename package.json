@@ -28,7 +28,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "core-js": "^2.5.4",
-    "moment-timezone": "^0.5.27",
+    "moment-timezone": "^0.5.35",
     "ngx-cookie-service": "^2.2.0",
     "replace-in-file": "^5.0.2",
     "rxjs": "~6.3.3",
